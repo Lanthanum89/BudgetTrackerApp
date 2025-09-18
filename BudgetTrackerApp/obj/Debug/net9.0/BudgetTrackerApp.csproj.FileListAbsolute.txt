@@ -7,9 +7,9 @@ G:\My Drive\Coding\Git Clones\BudgetTrackerApp\BudgetTrackerApp\obj\Debug\net9.0
 G:\My Drive\Coding\Git Clones\BudgetTrackerApp\BudgetTrackerApp\obj\Debug\net9.0\BudgetTrackerApp.AssemblyInfoInputs.cache
 G:\My Drive\Coding\Git Clones\BudgetTrackerApp\BudgetTrackerApp\obj\Debug\net9.0\BudgetTrackerApp.AssemblyInfo.cs
 G:\My Drive\Coding\Git Clones\BudgetTrackerApp\BudgetTrackerApp\obj\Debug\net9.0\BudgetTrackerApp.csproj.CoreCompileInputs.cache
+G:\My Drive\Coding\Git Clones\BudgetTrackerApp\BudgetTrackerApp\obj\Debug\net9.0\BudgetTrackerApp.sourcelink.json
 G:\My Drive\Coding\Git Clones\BudgetTrackerApp\BudgetTrackerApp\obj\Debug\net9.0\BudgetTrackerApp.dll
 G:\My Drive\Coding\Git Clones\BudgetTrackerApp\BudgetTrackerApp\obj\Debug\net9.0\refint\BudgetTrackerApp.dll
 G:\My Drive\Coding\Git Clones\BudgetTrackerApp\BudgetTrackerApp\obj\Debug\net9.0\BudgetTrackerApp.pdb
 G:\My Drive\Coding\Git Clones\BudgetTrackerApp\BudgetTrackerApp\obj\Debug\net9.0\BudgetTrackerApp.genruntimeconfig.cache
 G:\My Drive\Coding\Git Clones\BudgetTrackerApp\BudgetTrackerApp\obj\Debug\net9.0\ref\BudgetTrackerApp.dll
-G:\My Drive\Coding\Git Clones\BudgetTrackerApp\BudgetTrackerApp\obj\Debug\net9.0\BudgetTrackerApp.sourcelink.json
