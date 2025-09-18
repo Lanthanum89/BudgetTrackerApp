@@ -9,6 +9,10 @@ A simple console-based budget tracking application built with C# and .NET 9.0 th
 - **Dynamic Expense Addition**: Easily add new fixed expenses to your tracking list
 - **Budget Alerts**: Get warnings when you exceed your overall budget or individual category budgets
 - **Real-time Calculations**: Automatic calculation of total expenses, remaining budget, and category-specific remaining amounts
+- **Expense List Management**: Track and display individual expenses with automatic numbering
+- **Spending Limit Tracking**: Set spending limits and monitor when they are exceeded
+- **Random Expense Simulation**: Automatically simulate adding random expenses until spending limits are reached
+- **Method-based Calculations**: Reusable methods for calculating total expenses across different expense lists
 
 ## How It Works
 
@@ -35,18 +39,13 @@ The application tracks three types of financial data:
 Welcome to Budget Tracker App!
 Grocery Budget: 150
 Clothing Budget: 75
-Fixed Expenses:
-- Rent: 50
-- Utilities: 25
-- Internet: 100
-- Phone Bill: 60
-- Subscription Service: 30
 Total Fixed Expenses: 265
 Total Expenses: 435
 Remaining Budget: 55
 You are within your budget.
-Remaining Grocery Budget: 30
-Remaining Clothing Budget: 25
+Total Expense Amount: 120
+Alert: You have exceeded your spending limit!
+Final Total Expense Amount: 135
 ```
 
 ## Prerequisites
@@ -96,6 +95,10 @@ fixedExpensesList.Add(30.00); // subscription service
 // Update actual spending
 double grocerySpent = 120.00;  // What you actually spent on groceries
 double clothingSpent = 50.00;  // What you actually spent on clothing
+
+// Customize expense list and spending limit
+List<double> expenses = new() { 20.00, 35.00, 15.00, 40.00, 10.00 }; // Your individual expenses
+double spendingLimit = 100.00;  // Set your spending limit
 ```
 
 ## Project Structure
@@ -113,10 +116,13 @@ BudgetTrackerApp/
 ## Key Programming Concepts Demonstrated
 
 - **Collections**: Using `List<T>` for dynamic expense management
-- **Loops**: Foreach loops for iterating through expenses
+- **Loops**: Foreach loops for iterating through expenses and for loops for indexed access
+- **While Loops**: Simulating expense addition until spending limits are reached
 - **Conditional Logic**: Budget status checking with if/else statements
 - **String Interpolation**: Formatted output using `$"{variable}"` syntax
 - **Mathematical Operations**: Budget calculations and comparisons
+- **Methods**: Creating reusable functions like `CalculateTotalExpenses()` for code organization
+- **Random Number Generation**: Using the `Random` class to simulate dynamic expense scenarios
 
 ## Future Enhancements
 
