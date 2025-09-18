@@ -77,4 +77,67 @@ if (remainingClothingBudget < 0)
     Console.WriteLine("Alert: You have exceeded your clothing budget!");
 }
 
-// End of the Budget Tracker App
+// declare a list of expenses
+
+List<double> expenses = new() { 20.00, 35.00, 15.00, 40.00, 10.00 };
+
+// create for loop to iterate through the list and print each expense
+Console.WriteLine("List of Expenses:");
+for (int i = 0; i < expenses.Count; i++)
+{
+    Console.WriteLine($"Expense {i + 1}: {expenses[i]}");
+}
+
+// create method to calculate total expenses
+double CalculateTotalExpenses(List<double> expenseList)
+{
+    double total = 0.00;
+    foreach (double expense in expenseList)
+    {
+        total += expense;
+    }
+    return total;
+}
+double totalExpenseAmount = CalculateTotalExpenses(expenses);
+Console.WriteLine($"Total Expense Amount: {totalExpenseAmount}");
+
+// create variable called spendingLimit and set it to 100.00
+double spendingLimit = 100.00;
+
+// check if totalExpenseAmount exceeds spendingLimit
+if (totalExpenseAmount > spendingLimit)
+{
+    Console.WriteLine("Alert: You have exceeded your spending limit!");
+}
+else
+{
+    Console.WriteLine("You are within your spending limit.");
+}
+
+// use a while loop to simulate adding expenses until the spending limit is reached
+Random rand = new();
+while (totalExpenseAmount < spendingLimit)
+{
+    double newExpense = rand.Next(5, 30); // random expense between 5 and 30
+    expenses.Add(newExpense);
+    totalExpenseAmount = CalculateTotalExpenses(expenses);
+    Console.WriteLine($"Added Expense: {newExpense}, New Total Expense Amount: {totalExpenseAmount}");
+}
+
+Console.WriteLine("Final List of Expenses:");
+for (int i = 0; i < expenses.Count; i++)
+{
+    Console.WriteLine($"Expense {i + 1}: {expenses[i]}");
+}   
+
+Console.WriteLine($"Final Total Expense Amount: {totalExpenseAmount}");
+if (totalExpenseAmount > spendingLimit)
+{
+    Console.WriteLine("Alert: You have exceeded your spending limit!");
+}
+else
+{
+    Console.WriteLine("You are within your spending limit.");
+}
+
+
